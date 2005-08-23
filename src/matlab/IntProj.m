@@ -9,10 +9,12 @@ function IntProj(ana, hs, proj)
 %  For output, the function creates 
 % see also insane function Int_Proj
 
-FuncName = 'IntProj';
+clear all
+
+FuncName = 'MinProj';
 
 if (proj == -1) proj_s = 'min';
-elseif (proj == 1) proj_s = 'max';
+else if (proj == 1) proj_s = 'max';
 else 
    fprintf(2,'Error %s: Bad projection parameter\n', FuncName);
    return;
